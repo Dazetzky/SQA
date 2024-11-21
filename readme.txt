@@ -14,6 +14,7 @@ cd C:\...\SQA\back
 
 --!Запуск фронт!--
 Открыть папку C:\...\SQA\sqa в редакторе кода (в нашем случае - Visual Studio Code)
+Ввести в терминале: npm install
 Ввести в терминале: ng s -o
 Приложение работает на стандартном хосте: http://localhost:4200/
 
@@ -40,10 +41,12 @@ Django administration (http://127.0.0.1:8000/admin/)
 
 --!Angular!--
 npm install -g @angular/cli
+--!Установка Django!--
+https://www.youtube.com/watch?v=1LfTcodLU-s&ab_channel=egoroff_channel
 --!Модуль pip, если не установлен!--
 py -m ensurepip --upgrade
 
---!Библиотеки и пакеты!--
+--!Библиотеки и пакеты, если будет ругаться!--
 pip install pip-tools
 pip install -U djoser
 pip install djangorestframework

@@ -1,0 +1,12 @@
+<div class="search-menu">
+    <app-search (onClickEvent)="NoteClearComponent.oninputstr($event)" (onClickDown)="NoteClearComponent.onClickBtnD()" ></app-search>
+</div>
+
+<div class="searching">
+    <section class="container">
+        <div class="box">
+          <child-comp #NoteClearComponent></child-comp>
+        
+        </div>
+    </section>
+</div>

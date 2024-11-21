@@ -1,0 +1,9 @@
+<section class="edit">
+    <div class="modal-container" id="modal">
+        <div class="modal-content">
+            <span class="close-modal" (click)="modalService.showDialog = false" >&times;</span>
+            <input type="text" placeholder="Изменить запись..." class="modal-input" [(ngModel)]="editText">
+            <button (click)="onClickBtn()" class="modal-confirm">Подтвердить</button>
+        </div>
+    </div>
+</section>

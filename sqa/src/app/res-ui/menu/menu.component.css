@@ -1,0 +1,86 @@
+
+  .menu {
+    background: rgba(15, 17, 15, 0.79);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    border-right: 3px solid var(--color-dark-grey);
+    padding: 112px 0px 0px 0px;
+    width: 110px;
+    min-height: 87%;
+    list-style: none;
+    margin: 0;
+    padding-right: 15px;
+    }
+    
+    .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 50px; 
+    position: relative;
+    }
+    
+    .menu-item .icon {
+    width: 32px;
+    height: 36px;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    /* отступ снизу */
+    margin-top: 5px; 
+    }
+    
+    .menu-item .icon img {
+    width: 34px;
+    height: 42px;
+    }
+    
+    .menu-item .text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center; 
+    color: var(--color-whire);
+    }
+    
+    .menu-item .line {
+    position: absolute;
+    border-radius: 31px;
+    left: 0px;
+    width: 5px;
+    height: 80px;
+    background-color: var(--color-grey);
+    }
+    
+    .menu-item:hover .line {
+    background-color: var(--color-light);
+    }
+    
+    /* Отступ между линией и иконкой */
+    .menu-item > *:not(.line) { 
+    margin-left: 24px;
+    }
+   
+   /* Выравнивание иконки по центру */
+   .menu-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   }
+   
+   /* фикс кривых отступов */
+   .menu-item:nth-child(1) > *:not(.line),
+   .menu-item:nth-child(2) > *:not(.line) { 
+    margin-left: 32px;
+   } 
+   
+   /* фикс кривых отступов для записей */
+   .menu-item:nth-child(1) > *:not(.line) {
+    margin-left: 30px; 
+   }
+  
+  /* декор ссылки */
+  .menu-item {
+    text-decoration: none; 
+    color: var(--color-whire);
+  }
+  

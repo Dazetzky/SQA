@@ -1,0 +1,85 @@
+.box-search {
+    padding-top: 30px;
+    height: 800px;
+    width: 100%;
+ 
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+ }
+ .box-search::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+ }
+
+ .icon-srt {
+   /* обычный стиль иконки */
+   width: calc(70px - 0px);
+   filter: grayscale(0%); /* Отменяем эффект серого цвета */
+ }
+ 
+ .search-item.active .icon-srt {
+   filter: grayscale(100%); /* черно-белым */
+   /* или другие стили: */
+   /* color: blue; */ /* Если иконка - текст */
+   /* fill: blue; */ /* Если иконка - SVG */
+ }
+
+ .search-box {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("/grey-search.svg");
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+ }
+
+ .search::placeholder { /* Стили для плейсхолдера */
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   color: var(--color-grey);
+  }
+
+ .search-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 32px;
+ }
+
+
+ .search-item {
+    padding-left: 20px;
+ }
+
+ .search-main {
+    padding-top: 30px;
+    padding-left: calc(40px - 0px);
+ }
+
+ input[type="text"] {
+    border: 2px solid var(--color-light);
+    border-radius: 18px;
+
+    background: rgba(15, 15, 17, 0.79);
+
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 95.7%;
+    height: 73px;
+
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+   }
+
+   .comment-box::placeholder { /* Стили для плейсхолдера */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--color-grey);
+   }
+
+    /* Отменяем изменение цвета обводки при фокусе */
+ input[type="text"]:focus {
+    outline: none; /* Отменяем обводку */
+    color: var(--color-white);
+   }

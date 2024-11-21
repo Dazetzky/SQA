@@ -1,0 +1,56 @@
+input[type="text"] {
+    border: 2px solid var(--color-light);
+    border-radius: 18px;
+
+    background: rgba(15, 15, 17, 0.79);
+
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 95.7%;
+    height: 73px;
+
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+   }
+
+   .comment-box::placeholder { /* Стили для плейсхолдера */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--color-grey);
+   }
+
+    /* Отменяем изменение цвета обводки при фокусе */
+ input[type="text"]:focus {
+    outline: none; /* Отменяем обводку */
+    color: var(--color-white);
+   }
+
+  .submit {
+   border: none;
+   display: flex;
+   margin-right: auto;
+
+
+   border-radius: 18px;
+   width: 253px;
+   height: 54px;
+   background-color: var(--color-grey);
+   color: var(--color-dark);
+
+   font-family: var(--font-family);
+   font-weight: 600;
+   font-size: 20px;
+  }
+
+.submit:hover{
+   background-color: var(--color-light);
+   color: var(--color-dark);
+   cursor:pointer;
+   border: none;
+}
+
+.comment {
+   padding-bottom: 30px;
+   padding-top: 2px;
+}

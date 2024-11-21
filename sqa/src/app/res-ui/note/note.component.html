@@ -1,0 +1,15 @@
+<div *ngFor="let item of notes" class="textbox">
+    <div class="text-elements">
+        <p class="name" #name>{{item.username}}</p>
+        <p class="main-text">{{item.name}}</p>
+    </div>
+    <div class="dropdown">
+    <a href="#" class="dropbtn"><img src="/dots.svg" alt="Действия"></a>
+        <div class="dropdown-content">
+            <a href="#" (click)="onClickBtn(item.username, item.id)" class="edit-link">Редактировать</a>
+            <a href="#" (click)="onClickBtn2(item.id, item.username)">Удалить</a>
+         </div>
+    </div>
+</div>
+
+<!--(click)="modalService.showDialog = true"-->

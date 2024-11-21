@@ -1,0 +1,26 @@
+.text-elements {
+    width: calc(clamp(400px, 85vw, 1900px) - 50px);
+ }
+ 
+ .textbox {
+    border: 2px solid var(--color-grey);
+    border-radius: 18px;
+    width: 100%;
+    background: rgba(15, 15, 17, 0.79);
+    margin-bottom: 30px;
+    padding: 10px;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .name {
+    font-weight: 600;
+    font-size: 20px;
+ }
+ 
+ .main-text {
+    font-weight: 400;
+    font-size: 16px;
+ }

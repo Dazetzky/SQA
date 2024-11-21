@@ -1,0 +1,11 @@
+<main class="search-main">
+    <section class="search-box">
+            <input type="text"  placeholder="Поиск..." class="search" id="search" [(ngModel)]="search" (change)="onChange($event)"/>
+            <div class="search-icons">
+                
+                <a (click)="onClickBtnD()" class="search-item" [class.active]="isActive">
+                    <img src="/srt4.svg" alt="" class="icon-srt">
+                  </a>
+             </div>
+    </section>
+</main>

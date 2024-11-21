@@ -1,0 +1,129 @@
+.modal-container {
+    /* display: none; */
+    position: fixed;
+    z-index: 10;
+    left: 50%; /* Центрирование по горизонтали */
+    top: 50%; /* Центрирование по вертикали */
+    transform: translate(-50%, -50%); /* Сдвиг на половину ширины и высоты для центрирования */
+    width: 80%; /* Изменена ширина */
+    max-width: 400px; /* Ограничение максимальной ширины */
+    height: auto; /* Автоматическая высота */
+    background-color: rgba(0, 0, 0, 0.5); 
+    }
+   
+   .modal-content {
+    background-color: var(--color-dark);
+    padding: 20px;
+    border: 1px solid var(--color-light);
+    border-radius: 10px;
+   }
+    
+    .close-modal {
+    color: var(--color-light);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    .close-modal:hover,
+    .close-modal:focus {
+    color: var(--color-light);
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+    .modal-input {
+    border: 2px solid var(--color-light);
+    border-radius: 18px;
+    background: rgba(15, 15, 17, 0.79);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 53px;
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .modal-confirm {
+    background-color: var(--color-grey);
+    color: var(--color-whire);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 50px;
+    width: 100%; /* Изменена ширина */
+
+    margin-bottom: 30px;
+    }
+    
+    .modal-confirm:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-weight: 600;
+    }
+    
+    .edit-link {
+    cursor: pointer;
+    }
+    
+    .edit-link:hover {
+    background-color: var(--color-light);
+    border-radius: 5px;
+    color: var(--color-dark);
+    }
+    
+    .edit-link:focus {
+    outline: none;
+    }
+    
+    .close-modal {
+    color: var(--color-grey);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    .close-modal:hover,
+    .close-modal:focus {
+    color: var(--color-light);
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    .modal-active {
+        z-index: 10;
+        position: fixed;
+      }
+
+      input[type="text"] {
+        border: 2px solid var(--color-light);
+        border-radius: 18px;
+    
+        background: rgba(15, 15, 17, 0.79);
+    
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 70%;
+        height: 50px;
+    
+        color: var(--color-white);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+       }
+    
+        /* Отменяем изменение цвета обводки при фокусе */
+     input[type="text"]:focus {
+        outline: none; /* Отменяем обводку */
+        color: var(--color-white);
+       }

@@ -1,0 +1,17 @@
+<main class="register-form">
+    <section class="registration-box">
+        <form [formGroup]="formRegister" (ngSubmit)="login()">
+            <div class="form-content">
+                <img src="/icon.ico" alt="icon" class="reg-ico">
+                <h1>Форма входа и регистрации</h1>
+                <div class="regs">
+                    <input type="text-reg" id="name" placeholder="Введите логин..." class="reg" required formControlName="username">
+                    <input type="password" id="pswd" placeholder="Введите пароль..." class="reg" required formControlName="password">
+                </div>
+                <div class="btns">
+                    <input type="submit" value="Авторизация" class="reg-button">
+                </div>
+            </div>
+        </form>
+    </section>
+</main>

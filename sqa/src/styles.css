@@ -1,0 +1,62 @@
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --color-dark: #0F0F11;
+    --color-light: #B5B5FF;
+    --color-white: #FFFFFF;
+    --color-grey: #707086;
+    --color-dark-grey: #2D2D3A;
+  }
+  
+  body {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    display: flex;
+    width: 100%;
+  }
+  
+  ::selection {
+
+    background: #CAB7FF; /* Safari */
+    color: #000;
+    
+    }
+    
+    ::-moz-selection {
+    
+    background: #CAB7FF; /* Firefox */
+    color: #000;
+    }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/public/fonts/Montserrat-Medium.ttf'), format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/public/fonts/Montserrat-Bold.ttf'), format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/public/fonts/Montserrat-Regular.ttf'), format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  src: url('/public/fonts/Montserrat-ExtraBold.ttf'), format('truetype');
+}
